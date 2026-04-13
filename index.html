@@ -174,8 +174,7 @@ footer{text-align:center;padding:20px;border-top:1px solid var(--border);font-si
         <div style="font-size:9px;color:var(--gray);text-transform:uppercase;letter-spacing:1px">Días</div>
       </div>
       <div style="background:var(--dark3);border:1px solid var(--border);border-radius:10px;padding:12px 20px;text-align:center;min-width:90px">
-        <div style="font-family:'Rajdhani',sans-serif;font-size:24px;font-weight:700;color:#E8192C">Lun–Vie</div>
-        <div style="font-size:9px;color:var(--gray);text-transform:uppercase;letter-spacing:1px">6–10 Abr</div>
+        <div style="font-family:'Rajdhani',sans-serif;font-size:24px;font-weight:700;color:#E8192C">SEMANA 15</div>
       </div>
     </div>
   </div>
@@ -196,27 +195,27 @@ footer{text-align:center;padding:20px;border-top:1px solid var(--border);font-si
     <div class="date-tabs" id="date-tabs">
       <div class="date-tab all-tab active" data-date="" onclick="setDate(this,'')">
         <span class="dt-day">Todos</span>
-        <span class="dt-count">534 pzas</span>
+        <span class="dt-count">534 productos</span>
       </div>
       <div class="date-tab" data-date="2026-04-06" onclick="setDate(this,'2026-04-06')">
         <span class="dt-day">Lun 6 Abr</span>
-        <span class="dt-count">115 pzas</span>
+        <span class="dt-count">115 productos</span>
       </div>
       <div class="date-tab" data-date="2026-04-07" onclick="setDate(this,'2026-04-07')">
         <span class="dt-day">Mar 7 Abr</span>
-        <span class="dt-count">122 pzas</span>
+        <span class="dt-count">122 productos</span>
       </div>
       <div class="date-tab" data-date="2026-04-08" onclick="setDate(this,'2026-04-08')">
         <span class="dt-day">Mié 8 Abr</span>
-        <span class="dt-count">82 pzas</span>
+        <span class="dt-count">82 productos</span>
       </div>
       <div class="date-tab" data-date="2026-04-09" onclick="setDate(this,'2026-04-09')">
         <span class="dt-day">Jue 9 Abr</span>
-        <span class="dt-count">192 pzas</span>
+        <span class="dt-count">192 productos</span>
       </div>
       <div class="date-tab" data-date="2026-04-10" onclick="setDate(this,'2026-04-10')">
         <span class="dt-day">Vie 10 Abr</span>
-        <span class="dt-count">23 pzas</span>
+        <span class="dt-count">23 productos</span>
       </div>
     </div>
   </div>
@@ -230,7 +229,7 @@ footer{text-align:center;padding:20px;border-top:1px solid var(--border);font-si
   <div class="sec-hdr">
     <span class="sec-t" id="sec-title">Todos los artículos</span>
     <div class="sec-line"></div>
-    <span class="sec-cnt" id="sec-cnt">534 pzas</span>
+    <span class="sec-cnt" id="sec-cnt">534 productos</span>
   </div>
 
   <div class="parts-grid" id="parts-grid"></div>
@@ -324,7 +323,7 @@ function renderProducts() {
   var secTitle = curDate ? ('Entrada: ' + (dateNames[curDate] || curDate)) : 'Todos los artículos';
   if (curSearch) secTitle += ' · "' + curSearch + '"';
   document.getElementById('sec-title').textContent = secTitle;
-  document.getElementById('sec-cnt').textContent = filtered.length + ' pzas';
+  document.getElementById('sec-cnt').textContent = filtered.length + ' productos';
   document.getElementById('cat-title').textContent = curDate ? 'Semana 15 · ' + (dateNames[curDate] || curDate) : 'Semana 15 · 2026';
 
   var grid = document.getElementById('parts-grid');
